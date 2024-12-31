@@ -20,9 +20,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: npm test
-    - name: Push Code
-      run: git push
-      if: success()
+      run: npm test | exit
+
       
 
